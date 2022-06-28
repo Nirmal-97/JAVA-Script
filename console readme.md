@@ -46,9 +46,11 @@ It logs data as a table. Each element in the array (or enumerable property if da
 The first column in the table will be labeled (index). If data is an array, then its values will be the array indices. If data is an object, then its values will be the property names. Note that (in Firefox) console.table is limited to displaying 1000 rows (first row is the labeled index).
 
 console.time()
+
 The console.time() method starts a timer you can use to track how long an operation takes. You give each timer a unique name, and may have up to 10,000 timers running on a given page. When you call console.timeEnd() with the same name, the browser will output the time, in milliseconds, that elapsed since the timer was started.
 
 console.timeLog()
+
 The console.timeLog() method logs the current value of a timer that was previously started by calling console.time() to the console.
 
 console.timeEnd()

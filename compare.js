@@ -1,26 +1,31 @@
-const object1 = {
+const objectA = {
   id: 1,
-  name: "edison",
+  name: "edison"
 };
-const object2 = {
+const objectB = {
+  id: 1,
+  name: "edison"
+};
+
+const objectC = {
+  id: 1,
+  name: "edison"
+};
+const objectD = {
   id: 2,
-  name: "edison",
+  name: "edison"
 };
-function compareObjects() {
-  let a = Object.getOwnPropertyNames(object1);
-  let b = Object.getOwnPropertyNames(object2);
-  //console.log(a);
-  //console.log(b);
-  if (a.length != b.length) {
-    return "false";
-  }
-  for (let i = 0; i <= a.length; i++) {
-    let prop1 = a[i];
-    let prop = b[i];
-    if (object1[prop1] != object2[prop]) {
-      return "false";
-    }
-  }
-  return "true";
+
+if (objectA.id == objectB.id && objectA.name == objectB.name) {
+  console.log("true");
 }
-console.log(compareObjects());
+else {
+  console.log("false")
+}
+
+if (objectC.id == objectD.id && objectC.name == objectD.name) {
+  console.log("true");
+}
+else {
+  console.log("false")
+}

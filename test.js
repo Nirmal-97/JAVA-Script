@@ -8,15 +8,26 @@
 
 // a.forEach(a =>)
 
-let fruits = ["apple", "orange", "grapes"];
+// let fruits = ["apple", "orange", "grapes"];
 
-fruits.forEach(fruit => {
-    console.log(fruit.toUpperCase());
-});
+// fruits.forEach(fruit => {
+//     console.log(fruit.toUpperCase());
+// });
 
-let numbers = [4, 9, 16, 25];
+// let numbers = [4, 9, 16, 25];
 
-let squareOfNumbers = numbers.map(Math.sqrt);
+// let squareOfNumbers = numbers.map(Math.sqrt);
 
-console.log(squareOfNumbers)
+// console.log(squareOfNumbers)
+
+const arr = [2, 4, 6, 8, 10];
+function double(x) {
+    return x * 3;
+}
+const output = arr.map(double);
+console.log(output)
+
+
+
+
 
